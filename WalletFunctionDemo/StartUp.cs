@@ -16,8 +16,7 @@ namespace WalletFunctionDemo
 
 
             builder.Services.AddDbContext<WalletDbContext>(
-                options => SqlServerDbContextOptionsExtensions.UseSqlServer(
-                    options, connectionString));
+                options => SqlServerDbContextOptionsExtensions.UseSqlServer(options, connectionString));
 
 
         }
